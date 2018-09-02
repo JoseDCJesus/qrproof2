@@ -34,7 +34,7 @@ def check(request, product_id):
     geolocator = Nominatim(user_agent="specify_your_app_name_here")
     location = geolocator.geocode(product.sale_place)
 
-    return HttpResponse("We are analizing your request. Please wait a moment. This process will use your geographic location. Your ip is" + str(ip))
+    #return HttpResponse("We are analizing your request. Please wait a moment. This process will use your geographic location. Your ip is" + str(ip))
     g = pygeoip.GeoIP('GeoIPCity.dat')
 
     city_lat = g.record_by_addr(str(ip))['latitude']
