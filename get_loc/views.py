@@ -3,7 +3,7 @@ from django.http import HttpResponse, Http404
 #from django.contrib.gis.geoip2 import GeoIP2
 from django.template import  RequestContext
 from geopy.geocoders import Nominatim
-import geoip2.database
+import pygeoip
 
 
 from .models import Product
@@ -37,11 +37,14 @@ def check(request, product_id):
     #return HttpResponse("We are analizing your request. Please wait a moment. This process will use your geographic location. Your ip is " + str(ip))
 
     ip = '79.169.47.90'
-    reader = geoip2.database.Reader('/home/josejesus/Desktop/QRP/qrproof/get_loc/GeoLite2-City.mmdb')
-    city = reader.city(ip)
+    #reader = geoip2.database.Reader('/home/josejesus/Desktop/QRP/qrproof/get_loc/GeoLite2-City.mmdb')
+    #city = reader.city(ip)
 
-    city_lat = city.location.latitude
-    city_log = city.location.longitude
+    gi = pygeoip.GeoIP('/home/josejesus/Desktop/QRP/qrproof/GeoLiteCity.dat')
+    city = gi.record_by_addr(ip)
+
+    city_lat = city['latitude']
+    city_log = city['longitude']
 
     if ( (abs(city_lat - location.latitude) <= 1) and ( abs(city_log - location.longitude) <= 0.3 ) ):
         return HttpResponse( "O produto " + str(product.product_name) + " é autêntico  e originário de " + str(product.origin) )
