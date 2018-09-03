@@ -36,11 +36,12 @@ def check(request, product_id):
 
     #return HttpResponse("We are analizing your request. Please wait a moment. This process will use your geographic location. Your ip is " + str(ip))
 
-    ip = '79.169.47.90'
+    #ip = '79.169.47.90'
     #reader = geoip2.database.Reader('/home/josejesus/Desktop/QRP/qrproof/get_loc/GeoLite2-City.mmdb')
     #city = reader.city(ip)
 
-    gi = pygeoip.GeoIP('/home/josejesus/Desktop/QRP/qrproof/GeoLiteCity.dat')
+    #gi = pygeoip.GeoIP('/home/josejesus/Desktop/QRP/qrproof/GeoLiteCity.dat')
+    gi = pygeoip.GeoIP('~/josdcjesus.pythonanywhere.comGeoLiteCity.dat')
     city = gi.record_by_addr(ip)
 
     city_lat = city['latitude']
