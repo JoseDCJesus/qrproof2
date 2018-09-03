@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, Http404
-from django.contrib.gis.geoip2 import GeoIP2
+#from django.contrib.gis.geoip2 import GeoIP2
 from django.template import  RequestContext
 from geopy.geocoders import Nominatim
 import pygeoip
@@ -34,8 +34,8 @@ def check(request, product_id):
     geolocator = Nominatim(user_agent="specify_your_app_name_here")
     location = geolocator.geocode(product.sale_place)
 
-    #return HttpResponse("We are analizing your request. Please wait a moment. This process will use your geographic location. Your ip is" + str(ip))
-    g = pygeoip.GeoIP('GeoIPCity.dat')
+    #return HttpResponse("We are analizing your request. Please wait a moment. This process will use your geographic location. Your ip is " + str(ip))
+    g = pygeoip.GeoIP('GeoLite2-City.mmdb')
 
     city_lat = g.record_by_addr(str(ip))['latitude']
     city_log = g.record_by_addr(str(ip))['longitude']
