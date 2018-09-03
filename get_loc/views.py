@@ -41,7 +41,7 @@ def check(request, product_id):
     #city = reader.city(ip)
 
     #gi = pygeoip.GeoIP('/home/josejesus/Desktop/QRP/qrproof/GeoLiteCity.dat')
-    gi = pygeoip.GeoIP('~/josdcjesus.pythonanywhere.com/GeoLiteCity.dat')
+    gi = pygeoip.GeoIP('/home/JosDCJesus/josdcjesus.pythonanywhere.com/GeoLiteCity.dat')
     city = gi.record_by_addr(ip)
 
     city_lat = city['latitude']
