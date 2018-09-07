@@ -120,7 +120,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/home/JosDCJesus/josdcjesus.pythonanywhere.com/static'
+#STATIC_ROOT = '/home/JosDCJesus/josdcjesus.pythonanywhere.com/static'
+STATIC_ROOT = 'home/josejesus/Desktop/QRP/qrproof/'
 
 GEOIP_PATH ='/home/josejesus/Desktop/QRProof/qrproof/geoip2_lib/'
 
