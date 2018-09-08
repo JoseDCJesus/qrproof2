@@ -120,7 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#STATIC_ROOT = '/home/JosDCJesus/josdcjesus.pythonanywhere.com'
+STATIC_ROOT = '/home/JosDCJesus/josdcjesus.pythonanywhere.com/assets'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
