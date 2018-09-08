@@ -25,7 +25,7 @@ SECRET_KEY = '+ia9(i$ot4b0^y(0ea&t&@#4+it&752vbm)y&6p!c0&$ta-!j6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['josdcjesus.pythonanywhere.com']
 
 
 # Application definition
@@ -121,9 +121,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 #STATIC_URL = '/static/admin/'
 
-STATIC_ROOT = '/home/JosDCJesus/josdcjesus.pythonanywhere.com/static'
+#STATIC_ROOT = '/home/JosDCJesus/josdcjesus.pythonanywhere.com/static'
 
-STATICFILES_DIRS = ['/home/JosDCJesus/josdcjesus.pythonanywhere.com/templates/static/admin/', ]
+STATIC_ROOT = '/home/JosDCJesus/qrproof2/static'
+
+#STATICFILES_DIRS = ['/home/JosDCJesus/josdcjesus.pythonanywhere.com/templates/static/admin/', ]
     
 #STATIC_ROOT = '/static'
 
