@@ -55,8 +55,8 @@ ROOT_URLCONF = 'qrproof.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': False,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -121,7 +121,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 #STATIC_URL = '/static/admin/'
 
-STATIC_ROOT = '	/home/JosDCJesus/josdcjesus.pythonanywhere.com/static'
+STATIC_ROOT = '/home/JosDCJesus/josdcjesus.pythonanywhere.com/templates'
 
 #STATICFILES_DIRS = ['/home/JosDCJesus/josdcjesus.pythonanywhere.com/static/admin/', ]
     
