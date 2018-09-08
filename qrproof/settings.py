@@ -125,10 +125,8 @@ STATIC_URL = '/static/admin/'
 
 STATIC_ROOT = '/'
 
-'''STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
-]'''
+STATICFILES_DIRS = '/home/JosDCJesus/josdcjesus.pythonanywhere.com/static/admin/'
+    
 #STATIC_ROOT = '/static'
 
 #GEOIP_PATH ='/home/josejesus/Desktop/QRProof/qrproof/geoip2_lib/'
