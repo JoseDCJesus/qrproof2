@@ -118,14 +118,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
+STATIC_URL = '/path_to_your_statics'
 
-STATIC_ROOT = '/home/JosDCJesus/josdcjesus.pythonanywhere.com/assets'
+#STATIC_ROOT = '/home/JosDCJesus/josdcjesus.pythonanywhere.com/assets'
 
-STATICFILES_DIRS = [
+STATIC_ROOT = '/'
+
+'''STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     '/var/www/static/',
-]
+]'''
 #STATIC_ROOT = '/static'
 
 #GEOIP_PATH ='/home/josejesus/Desktop/QRProof/qrproof/geoip2_lib/'
