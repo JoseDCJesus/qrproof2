@@ -123,7 +123,7 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = '/home/JosDCJesus/josdcjesus.pythonanywhere.com/templates/'
 
-#STATICFILES_DIRS = ['/home/JosDCJesus/josdcjesus.pythonanywhere.com/static/admin/', ]
+STATICFILES_DIRS = ['/home/JosDCJesus/josdcjesus.pythonanywhere.com/templates/static/admin/', ]
     
 #STATIC_ROOT = '/static'
 
