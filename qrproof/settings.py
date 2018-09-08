@@ -121,7 +121,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 #STATIC_URL = '/static/admin/'
 
-STATIC_ROOT = '/home/JosDCJesus/josdcjesus.pythonanywhere.com/templates'
+STATIC_ROOT = '/home/JosDCJesus/josdcjesus.pythonanywhere.com/templates/'
 
 #STATICFILES_DIRS = ['/home/JosDCJesus/josdcjesus.pythonanywhere.com/static/admin/', ]
     
