@@ -18,5 +18,5 @@ from django.contrib import admin
 
 urlpatterns = [
     path('', include('get_loc.urls')),
-    path('static/', admin.site.urls),
+    path('admin/', admin.site.urls),
 ]
