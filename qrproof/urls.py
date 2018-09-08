@@ -18,5 +18,5 @@ from django.contrib import admin
 
 urlpatterns = [
     path('', include('get_loc.urls')),
-    path('static/admin/css/', admin.site.urls),
+    path('static/', admin.site.urls),
 ]
