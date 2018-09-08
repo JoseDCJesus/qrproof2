@@ -125,7 +125,7 @@ STATIC_URL = '/static/admin/'
 
 STATIC_ROOT = '/'
 
-STATICFILES_DIRS = '/home/JosDCJesus/josdcjesus.pythonanywhere.com/static/admin/'
+STATICFILES_DIRS = ['/home/JosDCJesus/josdcjesus.pythonanywhere.com/static/admin/', ]
     
 #STATIC_ROOT = '/static'
 
